@@ -1,0 +1,11 @@
+function handler(event) {
+  var request = event.request;
+  var query = request.querystring;
+
+  // The URL stays clean for callers. These values participate in the cache key
+  // because this function runs before CloudFront evaluates its cache.
+  if (!query.format) query.format = { value: "${default_format}" };
+  if (!query.quality) query.quality = { value: "${default_quality}" };
+
+  return request;
+}

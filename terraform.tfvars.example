@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and change only values that differ from the current deployment.
+aws_region       = "us-east-1"
+aws_profile      = "iago-cursos"
+source_bucket    = "certificado-carryontech"
+default_quality  = 0.82
+default_format   = "webp"
+enable_auto_webp = false
+enable_cors      = false
+cors_origin      = "https://app.example.com"

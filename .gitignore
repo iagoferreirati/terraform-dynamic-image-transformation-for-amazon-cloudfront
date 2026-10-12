@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+build/
+metrics-wrapper/node_modules/
+*.tfvars
+.DS_Store
